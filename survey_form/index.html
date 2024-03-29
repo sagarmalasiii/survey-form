@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please Fill Up Form to Help us Improve</p>
+        <form action="" id="survey-form">
+            <div class="form-control">
+                     
+                <!--Input Type text-->
+                <label id="name-label" for="name"> Name</label>
+                <input type="text" name="name" id="name" minlength="3" maxlength="15" required placeholder="Enter your name" />
+
+            </div>
+
+            <div class="form-control">
+                <!--Input Type email-->
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+
+            </div>
+            <div class="form-control">
+                <label id="number-label" for="age">Age</label>
+                <input type="number" name="age" min="18" max="50" id="number" placeholder="Enter your age"/>
+
+            </div>
+
+            <div class="form-control">
+                <!-- Datalist -->
+                <label for="provinces">Provinces</label>
+                <input list="provinces">
+                <datalist id="provinces">
+                    <option value="Bagmati">Bagmati</option>
+                    <option value="Koshi">Koshi</option>
+                    <option value="Gandaki">Gandaki</option>
+                    <option value="Lumbini">Lumbini</option>
+                    <option value="Sudur Pachim">Sudur Pachim</option>
+                    <option vlaue="Madesh Pradesh">Madesh Pradesh</option>
+                    <option value="Karnali">Karnali</option>
+    
+                </datalist>
+
+            </div>
+
+            <div class="form-control">
+                  <!-- Input type Radio Field -->
+                  <label for="gender">Gender</label>
+                  <label for="gender"> 
+                    <input type="radio" name="gender" value="m" />
+                    Male
+                  </label>
+                  
+                  
+                
+                  
+                  <label for="gender">
+                    <input type="radio" name="gender" value="f" />  Female</label>
+                
+                  
+                  <label for="gender">
+                    <input type="radio" name="gender" value="o" />
+                      Others
+      
+                  </label>
+
+            </div>
+
+            <div class="form-control">
+                 <!--Drop Down-->
+                 <label for="dropdown">Country</label>
+                 <select name="dropdown" id="dropdown" >
+                     <option value="">Select an option</option>
+                     <optgroup label="Asia">
+                         <option value="np">Nepal</option>
+                         <option value="ind">India</option>
+     
+                     </optgroup>
+                     <optgroup label="North America">
+                         <option value="us">United States</option>
+                      
+                    
+                         <option value="uk">United Kingdom</option>
+                     </select>
+             </optgroup>
+                
+                
+            </div>
+
+            <div class="form-control">
+                 <!-- Input type checkbox -->
+                 <label for="hobby">Hobby</label>
+                 <input type="checkbox" name="hobby" id="hobby" value="football">Playing Football<br>
+                 <input type="checkbox" name="hobby" id="hobby" value="cricket">Playing Cricket<br>
+                 <input type="checkbox" name="hobby" id="hobby" value="movie">Watching movies<br>
+                 <input type="checkbox" name="hobby" id="hobby" value="tt">Playing Table Tennis<br>
+
+            </div>
+
+            <div class="form-control">
+                <!-- Textarea -->
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="40" placeholder="Enter your description here"></textarea>
+
+            </div>
+
+            <div class="form-control">
+                <!-- Input Type Submit -->
+                <input type="submit" value="Submit" name="submit" id="submit">
+
+            </div>
+           
+            
+                
+            </form>
+        
+
+    </div>
+    
+</body>
+</html>
